@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "partials/heading.html" %}
+<section class="about-intro"><div class="nameplate"><span>JITENDRA</span><strong>js.</strong><span>SINGH · IIT MANDI</span></div><div><span class="eyebrow">RESEARCH &amp; TEACHING</span><h2>From teaching computer science<br>to asking theoretical questions.</h2>{{ page.html|safe }}<a href="{{ url('/connect/') }}" class="text-link">Say hello ↗</a></div></section>
+<section class="timeline-section"><div><span class="eyebrow">THE JOURNEY</span><h2>Education<br>&amp; experience.</h2></div><ol class="timeline">{% for item in site.timeline %}<li><span class="timeline-date">{{ item.date }}</span><div><h3>{{ item.title }}</h3><p>{{ item.institution }}</p>{% if item.note %}<span>{{ item.note }}</span>{% endif %}</div></li>{% endfor %}</ol></section>
+<section class="skills-section"><div><span class="eyebrow">METHODS &amp; INTERESTS</span><h2>A shared language.</h2></div><div class="skill-columns"><div><h3>Theory</h3><p>Algorithmic randomness<br>Algorithmic information theory<br>Infinite sequences</p></div><div><h3>Mathematics</h3><p>Discrete probability<br>Linear algebra<br>Cryptography</p></div><div><h3>Systems</h3><p>Path planning<br>Control algorithms<br>Autonomous systems</p></div></div></section>
+{% endblock %}

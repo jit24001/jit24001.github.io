@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "partials/heading.html" %}
+<section class="personal-note"><div class="landscape-art" aria-hidden="true"><svg viewBox="0 0 1000 400"><circle cx="750" cy="98" r="47"/><path class="ridge-back" d="M0 330L180 170l80 65 173-192 200 230 110-111 257 168V400H0z"/><path class="ridge-front" d="M0 360l180-80 150 50 200-150 190 130 130-65 150 100v55H0z"/><path class="ridge-line" d="M0 365Q330 280 530 340T1000 355"/></svg><span>PERSONAL NOTES</span></div><div class="personal-copy"><span class="eyebrow">A CHAPTER IN PROGRESS</span><h2>{{ page.note_title|linebreaks }}</h2>{{ page.html|safe }}<a href="{{ url('/connect/') }}" class="text-link">In the meantime, say hello ↗</a></div></section>
+{% endblock %}
