@@ -1,0 +1,41 @@
+# Edit your contact details, website address and academic timeline here.
+name: Jitendra Singh
+first_name: Jitendra
+last_name: Singh
+url: https://jit24001.github.io
+email: D24001@students.iitmandi.ac.in
+role: PhD student
+field: Theoretical Computer Science
+university: Indian Institute of Technology Mandi
+short_university: IIT Mandi
+location: Mandi, Himachal Pradesh · India
+copyright_year: '2026'
+research_keywords:
+- Algorithmic information theory
+- Infinite sequences
+- Finite-state dimension
+- Graph constructions
+project_links:
+- label: ARD-Eval · GitHub
+  description: Public project code
+  url: https://github.com/jit24001/ard-eval
+- label: ARD-Eval traces · Hugging Face
+  description: Public correctness traces
+  url: https://huggingface.co/datasets/jit24001/ARD-Eval-traces
+timeline:
+- date: 2024 — PRESENT
+  title: PhD · Theoretical Computer Science
+  institution: Indian Institute of Technology Mandi
+  note: 'Advisor: Dr. Prateek Vishnoi'
+- date: 2022 — 2024
+  title: Assistant Professor
+  institution: Sharda University, Greater Noida
+  note: Teaching, student mentorship and departmental activities.
+- date: 2013 — 2015
+  title: M.Tech · Computer Science
+  institution: MMM University of Technology, Gorakhpur
+  note: Gold medalist
+- date: 2008 — 2012
+  title: B.Tech · Computer Science
+  institution: GBTU / UPTU, Lucknow
+  note: ''

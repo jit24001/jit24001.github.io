@@ -1,0 +1,6 @@
+[build]
+  command = "python -m pip install -r requirements.txt && python tools/build.py --site-url \"$URL\" && python tools/check_links.py"
+  publish = "_site"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
