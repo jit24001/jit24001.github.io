@@ -87,3 +87,82 @@
     max-height: none !important;
   }
 }
+/* Readability improvements inside all pages */
+@media screen {
+  .research-topics p,
+  .project-detail p,
+  .about-intro p,
+  .personal-copy p,
+  .connect-note p,
+  .encoding-copy p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #414c42;
+  }
+
+  .side-note p,
+  .skill-columns p,
+  .timeline p,
+  .small-callout p,
+  .authors {
+    font-size: 15px;
+    color: #414c42;
+  }
+
+  .venue,
+  .timeline li div > span,
+  .contact-fine,
+  .external-rows p,
+  .results-count {
+    font-size: 14px;
+    color: #414c42;
+  }
+
+  /* Darker publication years */
+  .pub-year {
+    color: #294b3a;
+    font-weight: 600;
+  }
+
+  /* Dates and smaller labels */
+  .timeline-date,
+  .project-meta,
+  .pub-type,
+  .tag-list span,
+  .stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #294b3a;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+  }
+
+  .closing-strip .eyebrow {
+    color: #e5ecd9;
+  }
+
+  /* Smaller controls and links */
+  .pub-actions a,
+  .copy-text,
+  .year-filters button,
+  .search-label input,
+  .encoding-presets button {
+    font-size: 14px;
+  }
+
+  .project-detail .project-role {
+    font-size: 14px !important;
+  }
+
+  /* Text at the bottom of every page */
+  .footer-grid p {
+    font-size: 13px;
+    color: #414c42;
+  }
+
+  .footer-note {
+    font-size: 13px !important;
+  }
+}
