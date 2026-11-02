@@ -196,3 +196,24 @@
     font-size: 40px;
   }
 }
+.home-quote {
+  margin: 30px 0 0;
+  padding: 0 0 18px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.home-quote p {
+  font: italic clamp(18px, 2vw, 22px)/1.6 var(--serif);
+  max-width: 900px;
+}
+
+.home-quote footer {
+  margin-top: 8px;
+  font: 13px/1.5 var(--sans);
+  color: var(--green);
+}
+
+.home-quote + .home-hero {
+  padding-top: 40px;
+}
