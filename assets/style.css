@@ -217,3 +217,63 @@
 .home-quote + .home-hero {
   padding-top: 40px;
 }
+/* Compact homepage layout */
+@media screen {
+  /* Center the quotation and enlarge it slightly */
+  .home-quote {
+    text-align: center;
+    margin-top: 22px;
+    padding-bottom: 14px;
+  }
+
+  .home-quote p {
+    max-width: 1050px;
+    margin: 0 auto;
+    font-size: clamp(19px, 2vw, 23px);
+    line-height: 1.55;
+  }
+
+  .home-quote footer {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  /* Bring the introduction and photo upward */
+  .home-quote + .home-hero {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    align-items: start;
+  }
+
+  /* Smaller main name */
+  .home-hero .hero-copy h1 {
+    font-size: 76px;
+    line-height: 1;
+    margin-top: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* Smaller portrait, keeping the entire image */
+  .home-hero .hero-art {
+    width: min(100%, 360px);
+    align-self: start;
+    justify-self: center;
+  }
+
+  .home-hero .hero-art img {
+    width: 100%;
+    height: auto;
+    max-height: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-hero .hero-copy h1 {
+    font-size: 64px;
+  }
+
+  .home-quote + .home-hero {
+    padding-top: 20px;
+    gap: 28px;
+  }
+}
