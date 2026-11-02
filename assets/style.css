@@ -174,12 +174,12 @@
 
   /* Larger name and initials in the header */
   .brand {
-    font-size: 13px;
-    gap: 14px;
+    font-size: 18px;
+    gap: 19px;
   }
 
   .brand-mark {
-    font-size: 44px;
+    font-size: 48px;
   }
 }
 
