@@ -4,6 +4,17 @@
 <meta property="og:title" content="{{ page.browser_title }} · {{ site.name }}"><meta property="og:description" content="{{ page.description }}"><meta property="og:type" content="website"><meta property="og:url" content="{{ canonical }}">
 <link rel="canonical" href="{{ canonical }}"><link rel="icon" href="{{ url('/assets/favicon.svg') }}" type="image/svg+xml"><link rel="stylesheet" href="{{ url('/assets/style.css') }}"><script defer src="{{ url('/assets/site.js') }}"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="nav-wrap"><a href="{{ url('/') }}" class="brand" aria-label="{{ site.name }} home"><span class="brand-mark">js<span>.</span></span><span>{{ site.name|upper }}</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="Main navigation">{% for item in navigation %}<a href="{{ url(item.path) }}"{% if page.path == item.path %} aria-current="page"{% endif %}>{{ item.label }}</a>{% endfor %}</nav></div></header>
+<header class="site-header"><div class="nav-wrap"><a href="{{ url('/') }}" class="brand" aria-label="{{ site.name }} home"><span class="brand-mark">js<span>.</span></span><span>{{ site.name|upper }}</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button><nav id="site-nav" aria-label="Main navigation">{% for item in navigation %}
+  {% if item.label == 'About' %}
+    <a href="{{ url('/assets/CV_J.pdf') }}"
+       target="_blank"
+       rel="noopener noreferrer">CV</a>
+  {% else %}
+    <a href="{{ url(item.path) }}"
+       {% if page.path == item.path %}
+       aria-current="page"
+       {% endif %}>{{ item.label }}</a>
+  {% endif %}
+{% endfor %}</nav></div></header>
 <main id="main" class="wrap">{% block content %}{% endblock %}</main>
 <footer class="site-footer"><div class="wrap footer-grid"><div><a href="{{ url('/') }}" class="footer-name">{{ site.name }}<span>.</span></a><p>{{ site.field }}<br>{{ site.university }}</p></div><div class="footer-links"><a href="{{ url('/research/') }}">Research</a><a href="{{ url('/projects/') }}">Projects</a><a href="{{ url('/connect/') }}">Connect ↗</a></div><p class="footer-note">{{ site.location }}<br>© {{ site.copyright_year }} {{ site.name }}</p></div></footer><div class="toast" role="status" aria-live="polite"></div></body></html>
